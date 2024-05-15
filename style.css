@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:outfit;
+}
+
+:root{
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+}
+
+@font-face {
+    font-family: outfit;
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: youngserife;
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+body{
+    background-color: var(--Eggshell);
+    
+    display: flex;
+    flex-direction: column;
+    
+
+    align-items: center;
+    
+}
+
+main{
+    background-color: var(--White);
+    width: 700px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+hr{
+    margin: 20px;
+}
+
+.box{
+    background-color: var(--RoseWhite);
+    opacity: 75%;
+    border-radius: 25px;
+    padding: 20px;
+}
+.preparation{
+    color: var(--DarkRaspberry);
+    font-family: outfit;
+    font-size: 1.25em;
+}
+
+h1{
+    margin: 10px 0;
+    font-size: 40px;
+    font-family: youngserife;
+}
+h2{
+    font-family: youngserife;
+    color: var(--Nutmeg);
+    margin: 20px 0;
+}
+
+.margimSegurança{
+    margin: 30px;
+}
+
+.panquecas{
+    margin: 30px;
+}
+
+
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+ul,ol,li{
+    margin: 10px 0 10px 0;
+    padding-left: 20px;
+}
+
+table{
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+table > tbody > tr > td {
+    margin-top:10px;
+    padding:10px;
+    border-bottom: 1px solid black;
+}
+
+td:nth-child(2){
+    color: var(--Nutmeg);
+    font-weight: bold;
+}
+
+footer > a{
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--White);
+    background-color: var(--DarkRaspberry);
+    transition: 0.5s;
+}
+
+footer > a:hover {
+    background-color: var(--White);
+    color: var(--DarkRaspberry);
+}
+
+@media (max-width: 400px) {
+
+    main{
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        width: 100%;
+    }
+    h1{
+        font-size: 25px;
+    }
+    p{
+        font-size: 15px;
+    }
+
+    .box{
+        font-size: 15px;
+    }
+    
+    section{
+        font-size: 15px;
+    }
+    .panquecas{
+        margin: 0;
+    }
+    img{
+        border-radius: 0;
+    }
+    footer{
+        padding-top: 20px;
+    }
+}
